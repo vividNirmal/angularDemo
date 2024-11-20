@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem; margin-top :10px">
+  <div class="card-body">
+    <h5 class="card-title">{{ todo.title }}</h5>
+    <p class="card-text">{{ todo.description }}</p>
+    <div class="d-flex align-items-center gap-2">
+      <button class="btn btn-danger flex-grow-1" (click)="OnClick(todo)">
+        Delete
+      </button>
+      <button class="btn btn-success flex-grow-1">Edit</button>
+    </div>
+  </div>
+</div>

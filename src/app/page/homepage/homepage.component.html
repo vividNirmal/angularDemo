@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <app-todoaddform
+    (todoadd)="addtodo($event)"
+    [formname]="'Todo List'"
+  ></app-todoaddform>
+  <app-custom-input [costomInput]="nameInput"></app-custom-input>
+  <app-custom-input [inputType]="'name'"></app-custom-input>
+  <app-custom-input [inputType]="'number'"></app-custom-input>
+  <div *ngIf="this.todos.length === 0">create List / your task</div>
+  <div class="row row-cols-3">
+    <div *ngFor="let ele of todos" class="col">
+      <div class="col">
+        <app-todolist
+          [todo]="ele"
+          (todoDelete)="deleteTodo($event)"
+        ></app-todolist>
+      </div>
+    </div>
+  </div>
+</div>

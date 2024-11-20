@@ -1,0 +1,10 @@
+<p>about works!</p>
+<div class="d-flex flex-column container-sm ">
+<button class="btn btn-primary " (click)="increment()" >increment</button>
+<p class="text-center">{{counter}}</p>
+<button class="btn btn-danger" (click)="decrement()" >Decrement</button>
+<button class="btn btn-outline-success" (click)="clear()"> clear</button>
+
+<div class='fs-3 text-capitalize text-center' (mouseover)="increment()">mouse hover increment</div>
+<div class='fs-3 text-capitalize text-center' (blur)="increment()">mouse hover increment</div>
+</div>

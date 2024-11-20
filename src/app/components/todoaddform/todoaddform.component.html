@@ -1,0 +1,18 @@
+<div class="my-3 container">
+  <form  (ngSubmit)="OnSubmit()" [formGroup]="todoForm" >
+    <h4 class="text-center text-3xl font-semibold ">{{formname}}</h4>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name="title" formControlName="title" *ngIf="" />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Descrition</label>
+      <input type="text" class="form-control" id="description" name="descrition" formControlName="description" />
+    </div>
+    <div class="md-3">
+      <label>UserName</label>
+      <input text="text" class="form-control" id="username" name="username" formControlName="username" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Add Todo</button>
+  </form>
+</div>

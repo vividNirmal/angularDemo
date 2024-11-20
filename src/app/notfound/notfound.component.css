@@ -1,0 +1,20 @@
+.heading_404 {
+  font-size: 3rem;
+  font-family: initial;
+}
+h4{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.notFound {  
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overscroll-behavior: none;
+}
+.img{
+  width: 70dvh;
+  height: fit-content;
+  object-fit: cover;
+}

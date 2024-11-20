@@ -1,0 +1,32 @@
+<!-- <input
+  type="{{ costomInput.type }}"
+  value="{{ costomInput.value }}"
+  name="{{ costomInput.name }}"
+/> -->
+
+<div [ngSwitch]="inputType">
+  <div *ngSwitchCase="'text'">
+    <input
+      type="text"
+      id="{{ id }}"
+      name="{{ id }}"
+      placeholder="{{ placeholder }}"
+    />
+  </div>
+  <div *ngSwitchCase="'number'">
+    <input
+      type="number"
+      id="{{ id }}"
+      name="{{ id }}"
+      placeholder="{{ placeholder }}"
+    />
+  </div>
+  <div *ngSwitchCase="'check'">
+    <input
+      type="checkbox"
+      id="{{ id }}"
+      name="{{ id }}"
+      placeholder="{{ placeholder }}"
+    />
+  </div>
+</div>
