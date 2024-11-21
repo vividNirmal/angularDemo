@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-template-driven',
   templateUrl: './template-driven.component.html',
   styleUrl: './template-driven.component.css',
+
 })
 export class TemplateDrivenComponent {
   constructor() {}
@@ -18,6 +19,5 @@ export class TemplateDrivenComponent {
       description: this.description,
       username: this.username,
     };
-    console.log(todo);
   }
 }
