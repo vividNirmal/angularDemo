@@ -4,20 +4,22 @@ import { HeaderComponent } from './header/header.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { FormComponent } from '../page/form/form.component';
 import { TodolistComponent } from './todolist/todolist.component';
-import { TodoaddformComponent } from './todoaddform/todoaddform.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { FormsModule, ReactiveFormsModule,FormBuilder, Validators } from '@angular/forms';
+import { TodoaddformComponent } from './todoaddform/todoaddform.component';
 
 
 
 @NgModule({
-  declarations: [TemplateDrivenComponent,ReactiveComponent],
+  declarations: [TemplateDrivenComponent,ReactiveComponent,TodoaddformComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     HeaderComponent,
     FormComponent,
     TodolistComponent,
-    TodoaddformComponent,
   ],
-  exports: [TemplateDrivenComponent,ReactiveComponent]
+  exports: [TemplateDrivenComponent,ReactiveComponent,TodoaddformComponent]
 })
 export class ComponentsModule { }

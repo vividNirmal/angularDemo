@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-reactive',
   templateUrl: './reactive.component.html',
   styleUrl: './reactive.component.css',
-
 })
 export class ReactiveComponent {
 
